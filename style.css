@@ -87,6 +87,12 @@ footer{
     flex-direction: column;
 }
 
+.feedback input{
+    height: 85px;
+    width: 25vw;
+}
+
+
 .contato{
     padding: 20px;
     display: flex;
