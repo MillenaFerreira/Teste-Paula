@@ -1,0 +1,94 @@
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+.links{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.links ul{
+    display: flex;
+    gap: 25px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-size: clamp(0.75rem, 0.125rem + 2.5vw, 2rem);
+}
+
+.links ul a:hover{
+    color: #9763D7;
+}
+
+.container{
+   display: flex;
+}
+
+.container1 img{
+    width: 40vw;
+}
+
+.container2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.container2 p { 
+    text-align: center;
+    font-size: clamp(0.75rem, 0.125rem + 2.5vw, 2rem);
+}
+
+.comecar{
+    min-width: 25vw;
+    padding: 20px 30px;
+    border: 0;
+    border-radius: 12px;
+    background-color: #661494;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.comecar:hover{
+    background-color: #8316c2;
+}
+
+.sobre{
+    display: flex;
+    background-color: #7715ac38;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.descricao-sobre p{
+    font-size: clamp(0.75rem, 0.125rem + 2.5vw, 2rem);
+}
+
+.img-sobre img{
+    width: 30vw;
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.034);
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contato{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
