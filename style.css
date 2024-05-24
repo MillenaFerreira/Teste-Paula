@@ -65,6 +65,7 @@
     background-color: #7715ac38;
     padding: 20px;
     border-radius: 12px;
+    margin-bottom: 20px;
 }
 
 .descricao-sobre p{
@@ -75,16 +76,14 @@
     width: 30vw;
 }
 
-footer{
-    background-color: rgba(0, 0, 0, 0.034);
-    display: flex;
-    justify-content: space-between;
-}
+
 
 .feedback{
     padding: 20px;
     display: flex;
     flex-direction: column;
+    width: 50%;
+    gap: 5px;
 }
 
 .feedback input{
@@ -97,4 +96,309 @@ footer{
     padding: 20px;
     display: flex;
     flex-direction: column;
+}
+
+
+.input-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    background-color: #f8f9fa;
+    border-radius: 30px;
+}
+
+input[type="text"] {
+    width: 100%;
+    height: 50px;
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+input[type="text"]::placeholder {
+    color: #adb5bd;
+}
+ input[type="text"]:focus {
+    background-color: #e9ecef;
+}
+
+.input-container .fas.fa-paper-plane {
+    margin-left: 10px;
+    color: #007bff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.input-container .fas.fa-paper-plane:hover {
+    color: #0056b3;
+}
+
+
+/* Tela de Cadastro */
+
+.cadastro{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 60vw;
+    height: 50vh;
+    border-radius: 12px;
+}
+
+.cadastro h1{
+    font-size: 42px;
+}
+
+.container-cadastro{
+    background-color: #d5bbe3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nome-sobrenome{
+    display: flex;
+    gap: 5px;
+}
+.cpf-telefone{
+    display: flex;
+    gap: 5px;
+}
+
+.email-senha{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 48vw;
+}
+
+button {
+    display: inline-block;
+    padding: 20px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #661494;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #882cbd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    background-color: #9425d4;
+    box-shadow: 0 2px 4px rgba(121, 26, 209, 0.2) inset;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(142, 35, 192, 0.5);
+}
+
+
+/* Tela de Login */
+
+.bem-vindo{
+    background-color: #ffffffb0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 60vw;
+    height: 50vh;
+    border-radius: 12px;
+}
+
+.bem-vindo h1{
+    font-size: 42px;
+}
+
+.container-bem-vindo{
+    background-image: url(./img\ fundo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.senha{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.possui-conta{
+    color: black;
+}
+
+.possui-conta a {
+    cursor: pointer;
+}
+
+
+/* Tela De Time */
+
+.container-time{
+    padding: 0;
+}
+
+.time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.equipe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.equipe p {
+    font-size: clamp(1rem, 0.5rem + 2vw, 2rem);
+    text-align: center;
+}
+
+.img-equipe img{
+    width: 450px;
+}
+
+.nosso-time{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #D5BBE3;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.cards-time{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card{
+    width: 250px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card img{
+    width: 200px;
+}
+
+/* Tela de perfil */
+
+.container-perfil{
+    display: flex;
+    padding: 50px;
+    gap: 40px;
+    font-size: clamp(1.5rem, 1rem + 2vw, 2.5rem);
+}
+
+.container-conta{
+    display: flex;
+    padding: 50px;
+    gap: 40px;
+    font-size: clamp(1.5rem, 1rem + 2vw, 2.5rem);
+}
+
+.perfil-conta {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    gap: 20px;
+}
+
+.perfil-conta a {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #007bff;
+    text-decoration: none;
+    background-color: #f8f9fa;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.perfil-conta a:hover {
+    background-color: #e2e6ea;
+    color: #0056b3;
+}
+
+.perfil-conta a:active {
+    background-color: #dae0e5;
+    color: #004085;
+    border-color: #007bff;
+}
+
+.perfil{
+    background-color: #007bff;
+}
+
+.conta:hover{
+    background-color: #007bff;
+}
+
+.detalhes{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-left: 2px solid #000;
+    padding-left: 20px;
+}
+
+.nome-alterar{
+    display: flex;
+    gap: 20px;
+}
+
+.telefone-alterar{
+    display: flex;
+    gap: 20px;
+}
+
+.nova-senha-alterar{
+    display: flex;
+    gap: 20px;
+}
+
+.regiao-alterar{
+    padding-top: 100px;
+    display: flex;
+    gap: 20px;
 }
